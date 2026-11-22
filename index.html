@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com/gsi/client; style-src 'self' 'unsafe-inline' https://accounts.google.com/gsi/style https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://accounts.google.com/gsi/; connect-src https://script.google.com https://script.googleusercontent.com https://accounts.google.com/gsi/; img-src 'self' data: blob: https://*.googleusercontent.com;">
+<meta name="theme-color" content="#13294b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Hale's CRM</title>
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+<script src="service-notes.js"></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+<div id="login">
+  <h1>HALE'S <span>CRM</span></h1>
+  <p class="meta">Sign in with the Google account your manager approved.</p>
+  <div id="gbtn" class="center"></div>
+  <p class="meta" id="loginMsg"></p>
+</div>
+
+<div id="app" class="hide">
+  <header>
+    <h1>HALE'S <span>CRM</span></h1>
+    <div class="who"><span id="whoName"></span><br><a id="signOutLink">Sign out</a></div>
+  </header>
+  <nav id="nav"></nav>
+  <main id="main"></main>
+</div>
+
+<div class="modal" id="modal"><div class="box" id="modalBox"></div></div>
+<div id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
